@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+p{
+    border: 2px solid black;
+}
+</style>
+<body>
+    <div id="parent">
+        <p>1st child</p>
+        <p>2nd child</p>
+        <p>3rd child</p>
+        <p>4th child</p>
+        <p>5th child</p>
+        <p>6th child</p>
+        <p>7th child</p>
+        <p>8th child</p>
+        <p>9th child</p>
+        <p>10th child</p>
+        <p>11th child</p>
+        <p>12th child</p>
+        <p>13th child</p>
+        <p>14th child</p>
+        <p>15th child</p>
+        <p>16th child</p>
+        <p>17th child</p>
+    </div>
+</body>
+<script>
+    let x=document.getElementById("parent");
+    let y=x.children;
+    x.firstElementChild.style.backgroundColor='blue';
+    x.lastElementChild.style.backgroundColor='palevioletred';  
+    y[8].style.backgroundColor='Green';
+    for(let i=0;i<y.length;i++){
+        if(i%2 !==0){
+            y[i].style.backgroundColor='lime';
+        }
+    }
+</script>
+</html>
